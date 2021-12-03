@@ -14,7 +14,7 @@ def get_list(path):
             name, ext = os.path.splitext(entry.name)
             if ext.lower() in ('.png', '.jpeg', '.jpg'):
                 images.append(entry.name)
-            elif ext.lower() in ('.json'):
+            elif ext.lower() in ('.json',):
                 jsons[name] = entry.name
     for dir in dirs:
         dir_entry = get_list('/'.join((path, dir)))
